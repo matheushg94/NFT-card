@@ -1,0 +1,153 @@
+@charset "utf-8";
+
+:root {
+    --color-primary-1: hsl(215, 51%, 70%);
+    --color-primary-2: hsl(178, 100%, 50%);
+    --color-primary-2h: hsla(178, 100%, 50%, 0.2); /*image hover*/
+    --color-neutral-1: hsl(217, 54%, 11%); /*main BG*/
+    --color-neutral-2: hsl(216, 50%, 16%); /*card BG*/
+    --color-neutral-3: hsl(215, 32%, 27%); /*line*/
+
+    --ff-base: 'Outfit', sans-serif; /*300, 400, 600*/
+
+    --fw-light: 300;
+    --fw-normal: 400;
+    --fw-bold: 600;
+}
+
+*, *::before, *::after {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100vw;
+    min-height: 100vh;
+}
+
+/* Accessible line-height
+   Improve text rendering */
+body {
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas {
+    display: block;
+    max-width: 100%;
+}
+
+/* Remove built-in form typography styles */
+input, button, textarea, select {
+    font: inherit;
+}
+
+/* Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+h1, h2, h3 {
+    line-height: 1;
+}
+
+/* General styling */
+
+body {
+    background-color: var(--color-neutral-1);
+    color: var(--color-primary-1);
+    font-family: var(--ff-base);
+    font-weight: var(--fw-light);
+    font-size: 18px;
+    font-size: 1.125rem;
+}
+
+main {
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+.card {
+    background-color: var(--color-neutral-2);
+    width: 355px;
+    width: 22.188rem;
+    padding: 24px;
+    padding: 1.5rem;
+    border-radius: 20px;
+}
+
+.image img {
+    border-radius: 10px;
+}
+
+.overlay {
+    display: none;
+}
+
+.nft-name {
+    color: white;
+    font-size: 24px;
+    font-size: 1.5rem;
+    font-weight: var(--fw-bold);
+    margin: 10px 0px;
+    margin: 0.625rem 0;
+}
+
+.nft-description {
+    margin: 10px 0px;
+    margin: 0.625rem 0;
+}
+
+.nft-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 10px 0px;
+    margin: 0.625rem 0;
+}
+
+.eth-value {
+    color: var(--color-primary-2);
+}
+
+.eth-value span {
+    margin-left: 10px;
+    margin-left: 0.625rem;
+}
+
+.time-left {
+    text-align: right;
+}
+
+.time-left span {
+    margin-left: 10px;
+    margin-left: 0.625rem;
+}
+
+.line {
+    height: 1px;
+    border: none;
+    background-color: var(--color-neutral-3);
+}
+
+.card-footer {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    gap: 1rem;
+    margin: 10px 0px;
+    margin: 0.625rem 0;
+}
+
+.avatar {
+    width: 44px;
+    width: 2.75rem;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+strong {
+    font-weight: var(--fw-light);
+    color: white;
+}
