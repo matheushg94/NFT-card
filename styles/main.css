@@ -83,7 +83,7 @@ main {
     position: relative;
 }
 
-.image img {
+img {
     position: relative;
     border-radius: 10px;
 }
@@ -108,15 +108,19 @@ main {
 }
 
 .nft-name {
-    color: white;
     font-size: 24px;
     font-size: 1.5rem;
     font-weight: var(--fw-bold);
-    margin: 14px 0px;
-    margin: 0.875rem 0;
+    margin: 16px 0px;
+    margin: 1rem 0;
 }
 
-.nft-name:hover {
+.nft-name a {
+    color: white;
+    text-decoration: none;
+}
+
+.nft-name:hover a {
     color: var(--color-primary-2);
     cursor: pointer;
 }
@@ -172,12 +176,13 @@ main {
     border-radius: 50%;
 }
 
-.card-footer strong {
+.creator {
     font-weight: var(--fw-light);
     color: white;
+    text-decoration: none;
 }
 
-.card-footer strong:hover {
+.creator:hover {
     color: var(--color-primary-2);
     cursor: pointer;
 }
