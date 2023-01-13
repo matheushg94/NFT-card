@@ -199,3 +199,7 @@ img {
     color: inherit;
     font-weight: var(--fw-bold);
 }
+
+.main-footer a:hover {
+    color: var(--color-primary-2);
+}
